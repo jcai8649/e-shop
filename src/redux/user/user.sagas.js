@@ -17,7 +17,6 @@ import {
 
 export function* getSnapshotFromUserAuth(userAuth, additionalData) {
   try {
-    console.log("from getSnapshot", additionalData);
     const userRef = yield call(
       createUserProfileDocument,
       userAuth,
@@ -50,7 +49,6 @@ export function* isUserAuthenticated() {
 }
 
 export function* signInAfterSignUp({ payload: { user, additionalData } }) {
-  console.log("from signInAfter", additionalData);
   yield getSnapshotFromUserAuth(user, additionalData);
 }
 
