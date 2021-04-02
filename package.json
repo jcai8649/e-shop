@@ -1,6 +1,7 @@
 {
   "name": "e-shop-server",
   "version": "1.0.0",
+  "license": "BSD-3-Clause",
   "engines": {
     "node": "15.2.0",
     "npm": "7.10.0"
